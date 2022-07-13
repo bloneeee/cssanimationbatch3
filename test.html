@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Aniation Batch 3 Test</title>
+        <style type="text/css">
+            *{
+                padding: 0;
+                margin: 0;
+                box-sizing: border-box;
+            }
+
+            body{
+                background-color: #222;
+            }
+
+            .box{
+                width: 100px;
+                height: 100px;
+                background-color: aqua;
+
+                animation: myani 3s infinite linear alternate-reverse 3s backwards;
+            }
+
+            @keyframes myani{
+                from{
+                    transform: translateX(500px);
+                }
+
+                to{
+                    transform: translateX(1000px);
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="box"></div>
+    </body>
+</html>
